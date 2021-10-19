@@ -1,0 +1,44 @@
+[
+    {
+      "_id": "615aff0dfee1580605546675",
+      "name": "Eye Care",
+      "description": "Primary eye care is the provision of appropriate, accessible, and affordable care that meets patients' eye care needs in a comprehensive and competent manner. Primary eye care provides the patient with the first contact for eye care as well as a lifetime of continuing care.",
+      "price": 75000,
+      "img": "https://www.gvhc.org/wp-content/uploads/2019/09/Screen-Shot-2019-09-09-at-6.52.36-PM.png"
+    },
+    {
+      "_id": "615aff0d4f9effbcf166e2e2",
+      "name": "Physical Therapy",
+      "description": "Physical therapy, also known as physiotherapy, is one of the allied health professions. It is provided by physical therapists who promote, maintain, or restore health through physical examination, diagnosis, prognosis, patient education, physical intervention, rehabilitation, disease prevention and health promotion.",
+      "price": 97000,
+      "img": "https://cdn-prod.medicalnewstoday.com/content/images/articles/160/160645/senior-man-receiving-physical-therapy-for-arm-and-shoulder.jpg"
+    },
+    {
+      "_id": "615aff0dfeecb75e17a415d9",
+      "name": "Dental Care",
+      "description": "Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders. Dentistry, the professional care of teeth, including professional oral hygiene and dental surgery.",
+      "price": 57000,
+      "img": "https://allstardentalclinic.com/wp-content/uploads/2017/12/shutterstock_112019783-e1513190056832.jpg"
+    },
+    {
+      "_id": "615aff0d2eb7c388511c0ee3",
+      "name": "Diagnostic Test",
+      "description": "A diagnostic test is a test used to identify a condition or its cause. It is used to diagnose. A diagnostic test performed as a part of a medical exam may be used to identify the cause of symptoms or identify a disease. When used for other purposes, a diagnostic test may be used to identify specific strengths and weaknesses.",
+      "price": 62000,
+      "img": "https://www.svarlifescience.com/hubfs/Imagebank/Laboratory%20Images%20with%20people/Svar-Life-Science-male-lab-technician-standing-in-laboratory-holding-blood-sample-1.jpg"
+    },
+    {
+        "_id": "615b017e92216d41c02a7dc8",
+        "name": "Skin Surgery",
+        "description": "Skin surgery is routinely performed by dermatologists and plastic surgeons, mostly using local anaesthesia. Types of skin surgery include: Skin biopsy (punch biopsy, shave biopsy, incisional biopsy and excision biopsy) Electrosurgery.",
+        "price": 120000,
+        "img": "https://99healthideas.com/wp-content/uploads/2019/11/cosmetic-surgery.png"
+      },
+      {
+        "_id": "615b017ed031d5d155a48fcf",
+        "name": "Surgery Service",
+        "description": "Any service in a hospital or medical centre that is procedure- or intervention-based, or supports surgical specialties. Anaesthesiology, cardiovascular surgery, ENT, general surgery, OB/GYN, orthopaedics, pathology, podiatry, radiology.",
+        "price": 82000,
+        "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/B2DE/production/_116909754_gettyimages-124205689.jpg"
+      }  
+  ]

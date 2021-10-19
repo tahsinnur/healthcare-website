@@ -5,6 +5,8 @@ import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Header from './Pages/Shared/Header/Header';
 import Login from './Pages/Login/Login/Login';
+import Footer from './Pages/Shared/Footer/Footer';
+import DoctorsPage from './Pages/DoctorsPage/DoctorsPage';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <Route path="/doctors">
+            <DoctorsPage></DoctorsPage>
+          </Route>
           <Route path="/login">
             <Login></Login>
           </Route>
@@ -26,6 +31,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
