@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <Container fluid fixed="bottom" style={{backgroundColor:"#00887a"}} className="text-white text-center footer py-5 mt-4">
+        <Container fluid style={{backgroundColor:"#00887a"}} className="text-white text-center footer py-5 mt-4">
             <h1 className="fw-bold">LIFELINE HEALTHCARE</h1>
             <div className="social-icon">
                 <ul>
@@ -16,7 +16,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div>
-                <p className="text-center"><small><i class="far fa-copyright"></i> 2021 LIFELINE HEALTHCARE BD, Inc. All Rights reserved</small></p>
+                <p className="text-center"><small><i className="far fa-copyright"></i> 2021 LIFELINE HEALTHCARE BD, Inc. All Rights reserved</small></p>
             </div>
         </Container>
     );
