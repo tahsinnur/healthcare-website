@@ -11,9 +11,13 @@ const ServiceCard = ({ service }) => {
                 <div className="card-body">
                     <h4 className="card-title">{name}</h4>
                     <p className="card-text">{description.slice(0, 100)}</p>
-                    <Link to={`/servicedetails/${_id}`} style={{ textDecoration: "none", color: "#00887a" }}>learn more</Link>
-                    <div>
-                        <Link to={`/appointment/${_id}`}><button style={{ backgroundColor: "#00887a" }} className="border-0 px-3 py-2 rounded text-white mt-4">Make An Appointment</button></Link>
+                    <div className="d-flex justify-content-between">
+                        <div>
+                            <Link to={`/servicedetails/${_id}`}><button style={{ backgroundColor: "#00887a" }} className="border-0 px-3 py-2 rounded text-white mt-4">See Details</button></Link>
+                        </div>
+                        <div>
+                            <Link to={`/appointment/${_id}`}><button style={{ backgroundColor: "#00887a" }} className="border-0 rounded text-white px-3 py-2 mt-4">Take Appointment</button></Link>
+                        </div>
                     </div>
                 </div>
             </div>

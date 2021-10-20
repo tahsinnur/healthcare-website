@@ -1,12 +1,30 @@
 import React, { useState } from 'react';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const { signInUsingGoogle, loginUser, registerNewUser, error, setError, setName } = useAuth();
+    const { signInUsingGoogle, loginUser, registerNewUser, error, setError, setName, setUser, setIsLoading } = useAuth();
+    
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+    console.log('came from', location.state?.from);
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isLogin, setIsLogin] = useState(false);
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+        .then(result => {
+            history.push(redirect_uri);
+            setUser(result.user);
+        })
+        .finally(() => {
+            setIsLoading(false);
+        })
+    }
 
     const toggleLogin = e => {
         setIsLogin(e.target.checked)
@@ -71,7 +89,11 @@ const Login = () => {
                                 </div>
                             </div>
                             <div className="row mb-3 text-danger">{error}</div>
-                            <button type="submit" className="btn text-white" style={{backgroundColor:"#00887a"}}>{isLogin ? 'Login' : 'Register'}</button>
+                            {
+                                isLogin ? 
+                                <button type="submit" className="btn text-white" style={{backgroundColor:"#00887a"}}>Login</button> :
+                                <button type="submit" className="btn text-white" style={{backgroundColor:"#00887a"}}>Register</button>
+                            }
 
                         </form>
                     </div>
@@ -80,7 +102,7 @@ const Login = () => {
             </div>
             <div className="text-center">
                 <p className="fs-5 mt-3">Try Google Login</p>
-                <button style={{ backgroundColor: "#00887a" }} onClick={signInUsingGoogle} className="btn text-white fs-5 px-3"><i className="fab fa-google"></i></button>
+                <button style={{ backgroundColor: "#00887a" }} onClick={handleGoogleLogin} className="btn text-white fs-5 px-3"><i className="fab fa-google"></i></button>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
-import B1 from '../../../images/Banner/Banner1.jpg';
+import B1 from '../../../images/Banner/Banner1.jpg'
 import B2 from '../../../images/Banner/Banner2.jpg';
 import B3 from '../../../images/Banner/Banner3.jpg';
 
@@ -10,18 +10,16 @@ const Banner = () => {
             <Carousel fade>
                 <Carousel.Item>
                     <img
-                        height="700px"
                         className="d-block w-100"
                         src={B1}
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h1 className="text-uppercase fw-bold" style={{ color:"#00887a"}}>We are your lifeline healthcare</h1>
+                        <h1 className="text-uppercase fw-bold" style={{ color:"#00887a"}}>Welcome to lifeline healthcare</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        height="700px"
                         className="d-block w-100"
                         src={B2}
                         alt="Second slide"
@@ -33,7 +31,6 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        height="700px"
                         className="d-block w-100"
                         src={B3}
                         alt="Third slide"
