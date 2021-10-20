@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import './ServiceDetails.css';
 
 const ServiceDetails = () => {
     const {serviceId} = useParams();
@@ -19,7 +20,8 @@ const ServiceDetails = () => {
     }, [serviceId, services])
 
     return (
-        <div className="container mt-4">
+        <div className="service-details container mt-4 mb-5">
+            <h2 style={{color:"#00887a"}} className="mt-5 mb-5 text-center">Service Details</h2>
             <div className="row row-cols-1 row-cols-md-2 g-4">
                 <div className="col d-flex">
                     <img className="img-fluid" src={singleService?.img} alt="" />

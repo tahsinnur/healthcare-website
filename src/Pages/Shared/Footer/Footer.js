@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <Container fluid style={{backgroundColor:"#00887a"}} className="text-white text-center footer py-5 mt-4">
+        <Container fluid style={{backgroundColor:"#00887a"}} className="footer text-white text-center footer py-5 mt-4">
             <h1 className="fw-bold">LIFELINE HEALTHCARE</h1>
             <div className="social-icon">
                 <ul>

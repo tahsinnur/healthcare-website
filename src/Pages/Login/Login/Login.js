@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
+import './Login.css';
 
 const Login = () => {
     const { signInUsingGoogle, loginUser, registerNewUser, error, setError, setName } = useAuth();
@@ -34,7 +35,7 @@ const Login = () => {
 
 
     return (
-        <div className="container mt-4">
+        <div className="login container mt-4">
             <div className="row">
                 <div className="col-md-2"></div>
                 <div className="col-md-8">

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import './Appointment.css';
 
 const Appointment = () => {
     const { serviceId } = useParams();
@@ -19,7 +20,7 @@ const Appointment = () => {
     }, [serviceId, services])
 
     return (
-        <div className="container">
+        <div className="appointment container">
             <h2 style={{color:"#00887a"}} className="mt-5 mb-4 text-center">Make An Appointment</h2>
             <form className="row g-3">
                 <div className="col-12">
