@@ -20,7 +20,7 @@ const Appointment = () => {
 
     return (
         <div className="container">
-            <h2 className="mt-5 mb-4 text-center">Appointment</h2>
+            <h2 style={{color:"#00887a"}} className="mt-5 mb-4 text-center">Make An Appointment</h2>
             <form className="row g-3">
                 <div className="col-12">
                     <label htmlFor="serviceName" className="form-label me-2">Service Name: </label>

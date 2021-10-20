@@ -42,9 +42,9 @@ const Login = () => {
                         <form onSubmit={handleRegistration}>
                             <h3 style={{color:"#00887a"}} className="text-center my-3 pb-3">{isLogin ? 'Please Login' : 'Create An Account'}</h3>
                             {!isLogin && <div className="row mb-3">
-                                <label htmlFor="inputAddress" className="col-sm-2 col-form-label">Name</label>
+                                <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
                                 <div className="col-sm-10">
-                                    <input type="text" onBlur={handleNameChange} className="form-control" id="yourname" placeholder="Your Name" />
+                                    <input required type="text" onBlur={handleNameChange} className="form-control" id="yourname" placeholder="Your Name" />
                                 </div>
                             </div>}
                             <div className="row mb-3">
